@@ -1,0 +1,30 @@
+package:
+  name: mixemt
+  version: 0.1
+
+source:
+  git_url: https://github.com/svohr/mixemt.git
+  git_rev: master  # 修改为正确的分支名称
+
+build:
+  number: 1
+  script: "python -m pip install . --no-deps --ignore-installed -vv"
+  noarch: python
+
+requirements:
+  host:
+    - python
+    - pip
+  run:
+    - python
+    - numpy
+    - scipy
+    - pysam
+    - biopython
+
+about:
+  home: http://github.com/svohr/mixemt
+  license: MIT
+  summary: A tool for the phylogenetic interpretation of human mtDNA sequence mixtures
+  description: |
+    mixemt is a tool for the phylogenetic interpretation of human mtDNA sequence mixtures.

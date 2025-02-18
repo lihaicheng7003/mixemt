@@ -54,6 +54,14 @@ cd mixemt
 pip install .
 ```
 
+using conda
+
+```shell
+conda install -c shuaizhou mixemt
+```
+
+
+
 Missing requirements will be automatically downloaded and installed.
 
 
@@ -315,5 +323,4 @@ Generate a rudimentary consensus sequence for each contributor and write
 out sequences in a FASTA-formatted file (`[PREFIX].fa`). Bases are called for
 each reference position by simple majority. The prefix value for
 this option is distinct from the other output options (`-s`, `-o`, and `-t`).
-
 
